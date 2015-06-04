@@ -37,4 +37,40 @@ nav ul li a {
     padding: 10px;
     margin-right: 20px;
   }
+
+}
+@media screen and (min-width: 1060px) {
+
+		#portfolio, #connect, #footer {
+
+    margin: 150px 0 100px;
+
+}
+
+ 	/*******************************
+	About
+	********************************/
+
+	h1 {
+	font-size: 4.25em;
+  margin: 0 auto -20px;
+  max-width: 600px;
+}
+
+	.profile-photo {
+  float: left;
+  width: 25%;
+	margin: 0px 80px 80px 7%;
+}
+
+.intro {
+	max-width: 950px;
+	padding-top: 40px;
+
+}
+#about {
+	padding-bottom:200px;
+}
+
+
 }
