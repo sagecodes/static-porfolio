@@ -1,0 +1,40 @@
+@media screen and (min-width: 760px) {
+
+/*******************************
+Header & Navigation
+********************************/
+
+.mobile-menu img {
+  display: none;
+
+}
+
+nav {
+	text-align: right;
+
+
+}
+
+.menu-list{
+  display: inline-block;
+  position: relative;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-right: 20px;
+  }
+}

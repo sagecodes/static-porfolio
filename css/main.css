@@ -66,12 +66,20 @@ Header & Navigation
 
 header {
   border-bottom: solid 2px;
+  padding-top: 80px;
 }
 
 .logopic {
     max-width: 140px;
     margin-left: 10px;
+    float: left;
 }
+
+.nav-bar {
+  margin-top: -80px;
+
+}
+
 
 nav {
   float: right;
@@ -80,8 +88,7 @@ nav {
 
 .menu-list{
   display: none;
-  float: right;
-  position: relative;
+
 }
 
 .menu-list.clicked{
@@ -98,13 +105,8 @@ nav {
 }
 
 .menu-list li{
-  width: 100%;
-  background: blue;
-  margin: 20px;
-  padding: 10px;
+
 }
-
-
 
 
 /*******************************
@@ -186,22 +188,23 @@ Portfolio
 .demo:hover {
   background: darkblue;
 }
-s
+.source:hover{
+  background: darkred;
 }
 /*******************************
 Connect
 ********************************/
-.social-icon {
-  display: block;
+
+.icons {
+  margin: 0 auto 0px;
+  max-width: 160px;
+  padding: 20px 0 20px;
 }
 
 .icons img{
   width: 50px;
 }
-.icons {
-  margin: 0 auto 0px;
-  max-width: 160px;
-}
+
 
 /*******************************
 Footer
