@@ -38,6 +38,10 @@ nav ul li a {
     margin-right: 20px;
   }
 
+  #sitemap {
+    display: none;
+  }
+
 }
 @media screen and (min-width: 1060px) {
 
@@ -61,6 +65,7 @@ nav ul li a {
   float: left;
   width: 25%;
 	margin: 0px 80px 80px 7%;
+
 }
 
 .intro {
