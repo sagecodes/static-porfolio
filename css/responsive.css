@@ -1,4 +1,4 @@
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 660px) {
 
 /*******************************
 Header & Navigation
@@ -45,11 +45,13 @@ nav ul li a {
 }
 @media screen and (min-width: 1060px) {
 
-		#portfolio, #connect, #footer {
-
-    margin: 150px 0 100px;
-
+  /*******************************
+General styles, Colors, Fonts & links
+  ********************************/
+	#portfolio, #connect, #footer {
+  margin: 150px 0 100px;
 }
+
 
  	/*******************************
 	About
@@ -57,19 +59,19 @@ nav ul li a {
 
 	h1 {
 	font-size: 4.25em;
-  margin: 0 auto -20px;
-  max-width: 600px;
+  margin: 0 auto 0px;
+  max-width: 750px;
+  text-align: left;
 }
 
 	.profile-photo {
   float: left;
   width: 25%;
-	margin: 0px 80px 80px 7%;
+	margin: 0px 50px 80px 7%;
 
 }
 
 .intro {
-	max-width: 780px;
 	padding-top: 40px;
 
 }
