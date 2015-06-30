@@ -49,7 +49,7 @@ nav ul li a {
 General styles, Colors, Fonts & links
   ********************************/
 	#portfolio, #connect, #footer {
-  margin: 150px 0 100px;
+  margin: 50px 0 50px;
 }
 
 
@@ -59,15 +59,6 @@ General styles, Colors, Fonts & links
 
 	h1 {
 	font-size: 4.25em;
-  margin: 0 auto 0px;
-  max-width: 750px;
-  text-align: left;
-}
-
-	.profile-photo {
-  float: right;
-  width: 20%;
-	margin: 0px 50px 80px 7%;
 
 }
 
