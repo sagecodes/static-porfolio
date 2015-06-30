@@ -1,0 +1,44 @@
+@media screen and (min-width: 660px) {
+
+/*******************************
+Header & Navigation
+********************************/
+
+.sliding-panel-button {
+
+
+  img {
+    height: 5.3em;
+  }
+}
+
+}
+@media screen and (min-width: 1060px) {
+
+  /*******************************
+General styles, Colors, Fonts & links
+  ********************************/
+	#portfolio, #connect, #footer {
+  margin: 50px 0 50px;
+}
+
+
+ 	/*******************************
+	About
+	********************************/
+
+	h1 {
+	font-size: 4.25em;
+
+}
+
+.intro {
+	padding-top: 40px;
+
+}
+#about {
+	padding-bottom:0px;
+}
+
+
+}
