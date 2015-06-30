@@ -1,0 +1,303 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+/*******************************
+General styles, Colors, Fonts & links
+********************************/
+
+	* {
+  	box-sizing: border-box;
+	}
+
+  a {
+    text-decoration: none;
+    color: #606060;
+
+  }
+
+  ul {
+	list-style: none;
+	}
+
+  body {
+  font-family: 'Alegreya', Georgia, serif;
+  font-weight: normal;
+  color: #333;
+  font-size: 1.25em;
+  background: #f9f9f9;
+  margin: 0px;
+
+}
+
+ #about,#portfolio, #connect, #footer {
+    padding: 0px 10px 0px;
+
+}
+
+	#portfolio, #connect, #footer {
+    padding-top: 50px;
+
+}
+
+
+.dropcap {
+  font-size: 3.4em;
+  display: block;
+  float: left;
+  width: .8em;
+  height: .7em;
+  line-height: 0.8;
+  margin: 0;
+}
+
+.keyword {
+  color: #000;
+}
+
+
+.tagline{
+  color: #bdc3c7;
+  font-size: .8em;
+}
+
+#portfolio p, #portfolio h2, #connect p, #connect h2 {
+  max-width: 750px;
+  margin: 0 auto 0px;
+}
+
+/*******************************
+Header & Navigation
+********************************/
+
+header {
+  border-bottom: solid 2px;
+  padding-top: 80px;
+}
+
+.logopic {
+    max-width: 140px;
+    margin-left: 10px;
+    float: left;
+}
+
+.js-menu-trigger {
+  float: right;
+  margin-bottom: 80px;
+}
+
+.nav-bar {
+  margin-top: -80px;
+}
+
+/*******************************
+Refill slide panel
+********************************/
+
+.sliding-panel-content {
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $sliding-panel-border-color: $dark-gray;
+  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+  $sliding-panel-color: #fff;
+  $sliding-panel-border: 1px solid $sliding-panel-border-color;
+  $sliding-panel-background-hover: $action-color;
+  $sliding-panel-color-hover: #fff;
+  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+
+  @include position(fixed, 0px 0px 0px auto);
+  @include size(220px 100%);
+  @include transform(translateX(220px));
+  @include transition(all 0.25s linear);
+  background: $sliding-panel-background;
+  z-index: 999999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  li a {
+    border-bottom: $sliding-panel-border;
+    color: $sliding-panel-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+
+    &:focus {
+      background-color: $sliding-panel-background-focus;
+    }
+
+    &:hover {
+      background-color: $sliding-panel-background-hover;
+      color: $sliding-panel-color-hover;
+    }
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+  }
+}
+
+.sliding-panel-fade-screen {
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.sliding-panel-button {
+  padding: 10px 16px;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  outline: none;
+  border: none;
+  background: none;
+
+  img {
+    height: 2.3em;
+  }
+}
+
+
+/*******************************
+About(profile)
+********************************/
+
+h1 {
+	text-align: center;
+  font-size: 3.25em;
+}
+
+.profile-photo {
+  display: block;
+  max-width: 20%;
+  min-width: 170px;
+  max-width: 300px;
+  margin: 0 auto 10px;
+  border-radius: 100%;
+}
+
+.intro {
+	max-width: 750px;
+	margin: 0 auto 0px;
+}
+
+
+/*******************************
+Portfolio
+********************************/
+
+
+.gallery {
+  margin: 0%;
+  padding: 0;
+  list-style: none;
+
+}
+
+.gallery li {
+  width: 100%;
+  margin: 0%;
+  background-color: #ecf0f1;
+  color: #000;
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
+
+
+.project-header{
+  padding: 10px 10px 0px;
+}
+
+.projectp {
+  padding: 0px 20px 0px;
+}
+
+
+
+.source, .demo {
+  text-align: center;
+  padding: 10px;
+  border-radius: 7%;
+  width: 150px;
+  display: inline-block;
+  color: #fff;
+
+
+}
+.source {
+  background: #c0392b;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+.demo {
+  background: #2980b9;
+
+}
+
+.demo:hover {
+  background: darkblue;
+}
+.source:hover{
+  background: darkred;
+}
+/*******************************
+Connect
+********************************/
+
+.icons {
+  margin: 0 auto 0px;
+  max-width: 160px;
+  padding: 20px 0 20px;
+}
+
+.icons img{
+  width: 50px;
+}
+
+
+/*******************************
+Footer
+********************************/
+
+footer {
+  border-top: solid 2px;
+  background: #1e1e1e;
+  color: #606060;
+  text-align: center;
+  padding: 30px 0 70px;
+}
+
+footer a{
+  color: #606060;
+}
+
+#sitemap{
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#sitemap a{
+  margin: 0 auto 20px;
+
+}
+
+

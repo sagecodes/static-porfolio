@@ -1,41 +1,35 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*******************************
 General styles, Colors, Fonts & links
 ********************************/
+* {
+  box-sizing: border-box; }
 
-	* {
-  	box-sizing: border-box;
-	}
+a {
+  text-decoration: none;
+  color: #606060; }
 
-  a {
-    text-decoration: none;
-    color: #606060;
+ul {
+  list-style: none; }
 
-  }
-
-  ul {
-	list-style: none;
-	}
-
-  body {
+body {
   font-family: 'Alegreya', Georgia, serif;
   font-weight: normal;
   color: #333;
   font-size: 1.25em;
   background: #f9f9f9;
-  margin: 0px;
+  margin: 0px; }
 
-}
+#about, #portfolio, #connect, #footer {
+  padding: 0px 10px 0px; }
 
- #about,#portfolio, #connect, #footer {
-    padding: 0px 10px 0px;
-
-}
-
-	#portfolio, #connect, #footer {
-    padding-top: 50px;
-
-}
-
+#portfolio, #connect, #footer {
+  padding-top: 50px; }
 
 .dropcap {
   font-size: 3.4em;
@@ -44,74 +38,120 @@ General styles, Colors, Fonts & links
   width: .8em;
   height: .7em;
   line-height: 0.8;
-  margin: 0;
-}
+  margin: 0; }
 
 .keyword {
-  color: #000;
-}
+  color: #000; }
 
-
-.tagline{
+.tagline {
   color: #bdc3c7;
-  font-size: .8em;
-}
+  font-size: .8em; }
 
 #portfolio p, #portfolio h2, #connect p, #connect h2 {
   max-width: 750px;
-  margin: 0 auto 0px;
-}
+  margin: 0 auto 0px; }
 
 /*******************************
 Header & Navigation
 ********************************/
-
 header {
   border-bottom: solid 2px;
-  padding-top: 80px;
-}
+  padding-top: 80px; }
 
 .logopic {
-    max-width: 140px;
-    margin-left: 10px;
-    float: left;
-}
+  max-width: 140px;
+  margin-left: 10px;
+  float: left; }
+
+.js-menu-trigger {
+  float: right;
+  margin-bottom: 80px; }
 
 .nav-bar {
-  margin-top: -80px;
+  margin-top: -80px; }
 
-}
+/*******************************
+Refill slide panel
+********************************/
+.sliding-panel-content {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: auto;
+  height: 100%;
+  width: 220px;
+  -webkit-transform: translateX(220px);
+  -moz-transform: translateX(220px);
+  -ms-transform: translateX(220px);
+  -o-transform: translateX(220px);
+  transform: translateX(220px);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  background: #404040;
+  z-index: 999999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+  .sliding-panel-content ul {
+    padding: 0;
+    margin: 0; }
+  .sliding-panel-content li {
+    list-style: none; }
+  .sliding-panel-content li a {
+    border-bottom: 1px solid #333;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none; }
+    .sliding-panel-content li a:focus {
+      background-color: #4d4d4d; }
+    .sliding-panel-content li a:hover {
+      background-color: #477DCA;
+      color: #fff; }
+  .sliding-panel-content.is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
 
+.sliding-panel-fade-screen {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998; }
+  .sliding-panel-fade-screen.is-visible {
+    opacity: 0.4;
+    visibility: visible; }
 
-nav {
-  float: right;
-  position: relative;
-}
-
-.menu-list{
-  display: none;
-
-}
-
-
-
-.mobile-menu img {
-  width: 65px;
-  margin: 10px 0px 0 0 ;
-  opacity: .7;
-
-}
-
-
+.sliding-panel-button {
+  padding: 10px 16px;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  outline: none;
+  border: none;
+  background: none; }
+  .sliding-panel-button img {
+    height: 2.3em; }
 
 /*******************************
 About(profile)
 ********************************/
-
 h1 {
-	text-align: center;
-  font-size: 3.25em;
-}
+  text-align: center;
+  font-size: 3.25em; }
 
 .profile-photo {
   display: block;
@@ -119,26 +159,19 @@ h1 {
   min-width: 170px;
   max-width: 300px;
   margin: 0 auto 10px;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 .intro {
-	max-width: 750px;
-	margin: 0 auto 0px;
-}
-
+  max-width: 750px;
+  margin: 0 auto 0px; }
 
 /*******************************
 Portfolio
 ********************************/
-
-
 .gallery {
   margin: 0%;
   padding: 0;
-  list-style: none;
-
-}
+  list-style: none; }
 
 .gallery li {
   width: 100%;
@@ -146,19 +179,13 @@ Portfolio
   background-color: #ecf0f1;
   color: #000;
   max-width: 750px;
-  margin: 0 auto 30px;
-}
+  margin: 0 auto 30px; }
 
-
-.project-header{
-  padding: 10px 10px 0px;
-}
+.project-header {
+  padding: 10px 10px 0px; }
 
 .projectp {
-  padding: 0px 20px 0px;
-}
-
-
+  padding: 0px 20px 0px; }
 
 .source, .demo {
   text-align: center;
@@ -166,66 +193,51 @@ Portfolio
   border-radius: 7%;
   width: 150px;
   display: inline-block;
-  color: #fff;
+  color: #fff; }
 
-
-}
 .source {
   background: #c0392b;
   margin-right: 2%;
-  margin-left: 2%;
+  margin-left: 2%; }
 
-}
 .demo {
-  background: #2980b9;
-
-}
+  background: #2980b9; }
 
 .demo:hover {
-  background: darkblue;
-}
-.source:hover{
-  background: darkred;
-}
+  background: darkblue; }
+
+.source:hover {
+  background: darkred; }
+
 /*******************************
 Connect
 ********************************/
-
 .icons {
   margin: 0 auto 0px;
   max-width: 160px;
-  padding: 20px 0 20px;
-}
+  padding: 20px 0 20px; }
 
-.icons img{
-  width: 50px;
-}
-
+.icons img {
+  width: 50px; }
 
 /*******************************
 Footer
 ********************************/
-
 footer {
   border-top: solid 2px;
   background: #1e1e1e;
   color: #606060;
   text-align: center;
-  padding: 30px 0 70px;
-}
+  padding: 30px 0 70px; }
 
-footer a{
-  color: #606060;
-}
+footer a {
+  color: #606060; }
 
-#sitemap{
+#sitemap {
   padding: 10px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
-#sitemap a{
-  margin: 0 auto 20px;
+#sitemap a {
+  margin: 0 auto 20px; }
 
-}
-
-
+/*# sourceMappingURL=main.css.map */
