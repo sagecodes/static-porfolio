@@ -65,8 +65,8 @@ General styles, Colors, Fonts & links
 }
 
 	.profile-photo {
-  float: left;
-  width: 25%;
+  float: right;
+  width: 20%;
 	margin: 0px 50px 80px 7%;
 
 }
