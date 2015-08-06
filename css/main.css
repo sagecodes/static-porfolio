@@ -144,7 +144,8 @@ Refill slide panel
   border: none;
   background: none; }
   .sliding-panel-button img {
-    height: 5.3em; }
+    height: 5.3em;
+    opacity: 0.5; }
 
 /*******************************
 About(profile)
